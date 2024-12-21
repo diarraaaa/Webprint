@@ -1,0 +1,366 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background: linear-gradient(to bottom right, #0c1852, #0c5eb7);    color: #ffffff;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ECF0F1;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #BDC3C7;
+    transform: scale(1.1);
+}
+
+/* Sections */
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.9rem;
+    color: #0c5eb7;
+    margin-bottom: 30px;
+}
+h2{
+    margin: 0px;
+}
+section {
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Presentation */
+#Presentation {
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url(code.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    width: 100%;
+    height: 400px;
+
+}
+
+#Presentation p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#services p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}
+/* Services Section */
+#services {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+
+}
+
+.services-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.services-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.services-card h2{
+    color: #0c5eb7;
+    font-size: 1.9rem;
+}
+.services-card p,
+.services-card ul {
+    margin: 0px;
+    color: black;
+}
+/* Contact Form */
+form {
+    display: grid;
+    gap: 15px;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0c5eb7;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #BDC3C7;
+}
+
+form select {
+    background-color: #ECF0F1;
+}
+
+form input[type="submit"] {
+    background: linear-gradient(to bottom right, #0c1852, #0c5eb7);    color: #ffffff;
+    color: #ECF0F1;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="submit"]:hover {
+    background-color: #0c5eb7;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+form input[type="submit"]:active {
+    background-color: #1A252F;
+    transform: scale(0.98);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to bottom right, #0c1852, #0c5eb7);    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;  /* Centers all content horizontally */
+    align-items: center;  /* Vertically centers the content */
+    color: white;
+    font-size: 14px;
+    position: relative;
+}
+
+footer p {
+    position: absolute;
+    left: 20px;  /* Aligns the text to the left */
+    margin: 0;
+    color: whi;
+}
+
+footer a {
+    margin-left: 15px;  /* Adds spacing between icons */
+}
+
+footer a img {
+    height: 30px;
+    width: auto;
+}
+
+footer a:hover img {
+    opacity: 0.8;  /* Slight hover effect for the icons */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-item {
+        grid-template-columns: 1fr;
+    }
+
+    .services-card {
+        margin-bottom: 20px;
+    }
+} 
+
+   #formule p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #2C3E50;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}
+/* formule Section */
+#formule {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+
+}
+
+.formule-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 30px;
+    width: 100%;
+}
+.formule-card h4{
+    font-size: 1.8rem;
+    border-color: black;
+    color: black;
+    border-width: 9px;
+    background-color: #f9f9f9;
+    width: 100%;
+    text-align: center;
+    background-size: 100% auto ;
+    padding: 10px;
+
+}
+
+.formule-card {
+    background: linear-gradient(to bottom left, #0c1852, #0c5eb7);    color: #ffffff;
+    border: 2px solid #BDC3C7;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease-in-out; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.formule-card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 8px 16px rgba(0, 10, 60, 0.654);
+}
+
+.formule-card img {
+    width: 30%;
+    object-fit: contain;
+    align-self: center;
+}
+
+.formule-card p,
+.formule-card ul {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.formule-enum ul {
+    list-style-type:square;
+    margin-left: 20px;
+}
+
+.formule-enum ul li {
+    padding: 15px;
+    text-align: left;
+}
+
+.formule-enum p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.formule-enum a {
+    background-color: white;
+    color: #2C3E50;
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: bolder;
+    border-color: #213242;
+    border-style: double;
+    border-radius: 7px;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.formule-enum a:hover {
+    background-color: #ECF0F1;
+    transform: scale(1.05);
+}
+.services-images img{
+    max-width: 30%;
+    height: 300px;
+}
+.services-card {
+    flex: 1; /* Allow the card to take equal space */
+    padding: 20px; /* Optional: padding inside the card */
+    border-radius: 10px; /* Optional: rounded corners for the card */
+    background-color:transparent; /* Optional: background color */
+    margin-bottom: 20px;
+}
+
+.services-image img {
+    width: 100%; /* Make the image take up the full width of the container */
+    height: 100%; /* Ensure the image stretches to match the height of the card */
+    object-fit: cover; /* Optional: maintain the aspect ratio and crop if necessary */
+    border-radius: 10px; /* Optional: rounded corners for the image */
+}
+.formule-card a{
+    color: #0c5eb7;
+    background-color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+}
